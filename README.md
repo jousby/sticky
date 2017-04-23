@@ -19,6 +19,25 @@ sudo apt-get update && time sudo apt-get dist-upgrade
 sudo apt-get update && sudo apt-get install --only-upgrade <pkg>
 ```
 
+## yum package management
+
+```bash
+# List info on a specific pacakge including possible updates
+sudo yum info <pkg>
+
+# Update the local pkg info and list possible updates
+sudo yum check-update
+
+# Upgrade all packages (assume yes to all questions)
+sudo yum -y update
+
+# Upgrade a single package (assume yes to all questions)
+sudo yum -y update <pkg>
+
+# Search for yum packages with term in the name
+sudo yum search <term>
+```
+
 ## yarn (npm replacement)
 
 ```bash
